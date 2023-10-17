@@ -57,6 +57,10 @@ a.navbar-brand {
   text-transform: uppercase;
   font-weight: 500 !important;
 }
+.btn-white:hover {
+  background-color: var(--color-primary);
+  color: var(--white);
+}
 .btn-icon {
   padding-right: 60px !important;
 }
@@ -72,12 +76,11 @@ a.navbar-brand {
   border-radius: 10px;
   text-align: center;
   padding-top: 6px;
-  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade transform */
+  transition: transform 0.3s ease-in-out;
 }
-.btn-white:hover .icon {
-  transform: translateY(-8px) rotate(5deg); /* Aplica uma leve translação e rotação no hover */
-}
-
+/* .btn-white:hover .icon {
+  transform: translateY(-8px) rotate(5deg);
+} */
 /* Banner */
 .banner {
   padding-top: 110px;
@@ -122,10 +125,47 @@ a.navbar-brand {
   padding-top: 6px;
 }
 .btn-sm {
-    padding: 9px 15px !important;
-    border-radius: 10px;
-    font-size: 16px !important;
+  padding: 9px 15px !important;
+  border-radius: 10px;
+  font-size: 16px !important;
 }
 .btn-social {
-    width: 45px;
+  width: 45px;
+}
+.card-banner {
+  height: 450px;
+  width: 450px;
+  background-color: #f4c949;
+  border-radius: 170px;
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.img-banner img {
+  position: absolute;
+  width: 570px;
+  top: 30px;
+  right: 15px;
+}
+.card {
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-size: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+}
+.card-case {
+  width: 350px;
+  font-size: 14px;
+  position: absolute !important;
+  right: 0 !important;
+  bottom: -75px;
+  border-radius: 20px !important;
+}
+.card-case-name {
+position: absolute !important;
+font-size: 12px;
+color: var(--color-primary);
+right: 20px;
+bottom: 10px;
 }
