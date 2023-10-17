@@ -151,7 +151,7 @@ a.navbar-brand {
 .card-banner {
   height: 450px;
   width: 450px;
-  background-color: #f4c949;
+  background-color: var(--orange-primary);
   border-radius: 170px;
   position: absolute;
   right: 0;
@@ -216,7 +216,6 @@ a.navbar-brand {
   height: 500px;
   background-image: url(../img/bg-icons-2.png);
   background-size: cover;
-  
 }
 
 /* Menu */
@@ -239,7 +238,7 @@ a.navbar-brand {
 }
 .card-item {
   height: 360px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .card-item .product-img img {
   width: 100% !important;
@@ -254,13 +253,13 @@ a.navbar-brand {
   height: 40px;
   margin-bottom: 0;
   font-size: 16px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .card-item .product-price {
   color: var(--color-primary);
   font-size: 20px;
   margin-top: 15px !important;
-  transition: .5s;
+  transition: 0.5s;
 }
 .card-item .add-cart {
   display: none;
@@ -268,7 +267,7 @@ a.navbar-brand {
   height: 30px;
   justify-content: center;
   align-items: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 .decrement-btn {
   color: var(--black-heavy);
@@ -331,9 +330,9 @@ a.navbar-brand {
 }
 .deposition {
   margin-top: 70px;
-  padding-bottom:  150px;
+  padding-bottom: 150px;
 }
-.background-deposition{
+.background-deposition {
   position: absolute;
   right: 0;
   left: 0;
@@ -357,7 +356,7 @@ a.navbar-brand {
   margin-bottom: 5px;
 }
 .deposition-note {
-color: var(--color-primary);
+  color: var(--color-primary);
 }
 .deposition-note span {
   color: var(--black);
@@ -415,4 +414,28 @@ color: var(--color-primary);
 }
 .reserve .img-banner img {
   width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: var(--orange-primary);
+}
+.footer-logo {
+  width: 150px;
+}
+
+.footer-logo-container,
+.footer-text-container,
+.footer-social-container {
+  display: flex;
+  align-items: center;
+}
+.footer-text-container {
+  justify-content: center;
+}
+.footer-social-container {
+  justify-content: end;
+}
+.footer-logo-container {
+  justify-content: start;
 }
