@@ -9,7 +9,7 @@
   --text: #4f4f4f;
   --text-out: #90908e;
   --color-primary: #ffbf00;
-  --secondary: #fff2cc;
+  --orange-primary: #fff2cb;
   --white: #fbf8f3;
   --red: #e74c3c;
   --green: #2ecc71;
@@ -41,6 +41,9 @@ a.navbar-brand {
   font-size: 40px;
   margin-top: 5px;
   margin-bottom: 70px;
+}
+.hidden {
+  display: none !important;
 }
 
 /* NavBar */
@@ -316,15 +319,11 @@ a.navbar-brand {
 }
 
 /* Depositions */
-/* .depositions {
-  padding-top: 100px;
-  padding-bottom: 150px;
-} */
 .depositions-card {
   height: 390px;
   width: 390px;
   border-radius: 120px;
-  background-color: #fff2cb;
+  background-color: var(--orange-primary);
   left: 0;
 }
 .depositions-container-data {
@@ -332,6 +331,15 @@ a.navbar-brand {
 }
 .deposition {
   margin-top: 70px;
+  padding-bottom:  150px;
+}
+.background-deposition{
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 500px;
+  background-image: url(../img/bg-icons-2.png);
+  background-size: cover;
 }
 .deposition-img {
   width: 65px;
@@ -342,10 +350,7 @@ a.navbar-brand {
   background-position: center;
   margin-right: 15px;
 }
-#depositions-1 .deposition-img {
-  background-image: url(../img/diego.jpg) !important;
-  background-size: cover;
-}
+
 .deposition-name {
   color: var(--black);
   font-size: 22px;
@@ -375,4 +380,39 @@ color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: end;
+}
+#depositions-1 .deposition-img {
+  background-image: url(../img/diego.jpg) !important;
+  background-size: cover;
+}
+#depositions-2 .deposition-img {
+  background-image: url(../img/ana.jpg) !important;
+  background-size: cover;
+}
+#depositions-3 .deposition-img {
+  background-image: url(../img/joao.jpg) !important;
+  background-size: cover;
+}
+
+/* Reserve */
+.reserve {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+.secoundary-card {
+  background-color: var(--orange-primary);
+  border-radius: 70px;
+  padding: 70px;
+}
+.reserve-card {
+  height: 320px;
+  width: 320px;
+  border-radius: 120px;
+  background-color: var(--white);
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+.reserve .img-banner img {
+  width: 100%;
 }
