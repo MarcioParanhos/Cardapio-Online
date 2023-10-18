@@ -17,6 +17,9 @@
 }
 
 /* GLOBAL CLASS */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--background);
   font-family: "Poppins", sans-serif !important;
@@ -438,4 +441,62 @@ footer {
 }
 .footer-logo-container {
   justify-content: start;
+}
+
+/* Modal-Cart */
+.full-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 50px;
+  background-color: var(--white);
+  z-index: 9999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.modal-header {
+  padding-bottom: 20px;
+}
+.modal-body {
+  flex: 1;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.phases {
+  display: flex;
+}
+.phase {
+  width: 35px;
+  height: 35px;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.phase::before {
+  content: '';
+  width: 20px;
+  background-color: var(--separate);
+  position: absolute;
+  height: 2px;
+  margin-left: 55px;
+}
+.phase:last-child::before {
+  content: none;
+}
+.phase.active, .phase.active::before  {
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+.cart-title {
+  font-size: 18px;
+  color: var(--black);
 }
