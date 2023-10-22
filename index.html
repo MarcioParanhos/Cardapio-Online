@@ -166,55 +166,30 @@
             </h1>
           </div>
           <div class="col-12 container-menu">
-            <a href="" class="btn btn-white btn-sm mr-3 active">
+            <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="menu.methods.getMenuItems('burgers')">
               <i class="fas fa-hamburger"></i> &nbsp;&nbsp;Burguers
             </a>
-            <a href="" class="btn btn-white btn-sm mr-3">
+            <a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="menu.methods.getMenuItems('pizzas')">
               <i class="fas fa-pizza-slice"></i> &nbsp;&nbsp;Pizzas
             </a>
-            <a href="" class="btn btn-white btn-sm mr-3">
+            <a id="menu-churrasco" class="btn btn-white btn-sm mr-3" onclick="menu.methods.getMenuItems('churrasco')">
               <i class="fas fa-drumstick-bite"></i> &nbsp;&nbsp;Churrasco
             </a>
-            <a href="" class="btn btn-white btn-sm mr-3">
+            <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="menu.methods.getMenuItems('steaks')">
               <i class="fas fa-bacon"></i> &nbsp;&nbsp;Steeks
             </a>
-            <a href="" class="btn btn-white btn-sm mr-3">
+            <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="menu.methods.getMenuItems('bebidas')">
               <i class="fas fa-cocktail"></i> &nbsp;&nbsp;Bebidas
             </a>
-            <a href="" class="btn btn-white btn-sm mr-3">
+            <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3" onclick="menu.methods.getMenuItems('sobremesas')">
               <i class="fas fa-ice-cream"></i> &nbsp;&nbsp;Sobremesas
             </a>
           </div>
           <div class="col-12">
             <div class="row" id="itemsMenu">
-              <div class="col-3 mb-5">
-                <div class="card card-item">
-                  <div class="product-img">
-                    <img
-                      src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <p class="product-title text-center mt-4">
-                    <b>Nome</b>
-                  </p>
-                  <p class="product-price text-center">
-                    <b>R$ 55,00</b>
-                  </p>
-                  <div class="add-cart">
-                    <span class="decrement-btn"
-                      ><i class="fas fa-minus"></i
-                    ></span>
-                    <span class="number-items">0</span>
-                    <span class="increment-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                    <span class="btn btn-add"
-                      ><i class="fas fa-cart-plus"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
+              
+
+
             </div>
             <div class="col-12 text-center">
               <a class="btn btn-white btn-sm" href="">Ver mais</a>
@@ -378,7 +353,7 @@
       </div>
     </footer>
 
-    <div id="modal-cart" class="full-modal">
+    <div id="modal-cart" class="full-modal hidden">
       <div class="modal-header">
         <div class="container">
           <a class="btn btn-white btn-sm float-right" href=""> Fechar </a>
@@ -609,5 +584,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/dados.js"></script>
   </body>
 </html>
